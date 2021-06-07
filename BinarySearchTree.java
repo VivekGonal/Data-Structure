@@ -80,14 +80,14 @@ public class BinarySearchTree{
 	public void preorder(Node temproot){
 		if (temproot!=null) {
 			System.out.println(temproot.element+" ");
-			inorder(temproot.left);
-			inorder(temproot.right);
+			preorder(temproot.left);
+			preorder(temproot.right);
 		}
 	}
 	public void postorder(Node temproot){
 		if(temproot!=null){
-			inorder(temproot.left);
-			inorder(temproot.right);
+			postorder(temproot.left);
+			postorder(temproot.right);
 			System.out.println(temproot.element+" ");
 		}
 	}
